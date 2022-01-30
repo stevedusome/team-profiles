@@ -1,0 +1,32 @@
+{
+  "name": "team-profiles",
+  "version": "1.0.0",
+  "description": "generates html profiles for a dev team",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevedusome/team-profiles.git"
+  },
+  "keywords": [
+    "node.js",
+    "html",
+    "css"
+  ],
+  "author": "stevedusome",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevedusome/team-profiles/issues"
+  },
+  "homepage": "https://github.com/stevedusome/team-profiles#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.4.7"
+  }
+}
