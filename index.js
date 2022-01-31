@@ -110,9 +110,10 @@ const internQuestions = [internQuestion[0], continueQuestion[0]];
 const engineerQuestions = [engineerQuestion[0], continueQuestion[0]];
 
 function Program () {
-    this.desiredUsers = 5;
+    this.desiredUsers = 0;
     this.storedUsers = [];
     this.acceptingInput = 'Yes';
+    this.storedMarkdown = '';
 }
 
 
@@ -184,14 +185,17 @@ Program.prototype.inputLoop = async function() {
     let memberInput = await this.addMember();
     console.log(this);
     console.log(memberInput);}
+    this.generateMarkdown();
 }
 
 
-Program.prototype.confirmNewMember = function() {
-    if (acceptingInput === 'Yes'){
+Program.prototype.generateMarkdown = function() {
+    for (let i = 0; i < this.storedUsers.length; i++) {
+    this.storedMarkdown += "Name: " + this.storedUsers[i].name + ", "
+
         
-    
-    }
+      }
+    return console.log(this.storedMarkdown)
 }
 
 new Program().inputLoop()
