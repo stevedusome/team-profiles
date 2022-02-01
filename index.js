@@ -199,8 +199,7 @@ return inquirer
 
 Program.prototype.inputLoop = async function() {
     while (this.acceptingInput === 'Yes') {
-    let memberInput = await this.addMember();
-    console.log(memberInput);}
+    let memberInput = await this.addMember();;}
     this.generateMarkdown();
     this.writeFile();
 }
